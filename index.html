@@ -1,55 +1,123 @@
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Keira Moran | Creative Producer & Strategist</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              parchment: '#F5F2ED',
-              obsidian: '#1A1A1A',
-              slateBlue: '#2C3E50',
-              mutedSage: '#7D8C7B',
-            },
-            fontFamily: {
-              sans: ['Inter', 'sans-serif'],
-              serif: ['Playfair Display', 'serif'],
-            },
-          }
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        parchment: '#F5F2ED',
+                        obsidian: '#1A1A1A',
+                        slateBlue: '#2C3E50',
+                        mutedSage: '#7D8C7B',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                }
+            }
         }
-      }
     </script>
     <style>
-      body {
-        background-color: #F5F2ED;
-        color: #1A1A1A;
-        scroll-behavior: smooth;
-      }
-      .perspective {
-        perspective: 1000px;
-      }
+        body { background-color: #F5F2ED; color: #1A1A1A; scroll-behavior: smooth; }
+        .section-fade { transition: opacity 0.6s ease-out, transform 0.6s ease-out; }
     </style>
-  <script type="importmap">
-{
-  "imports": {
-    "react": "https://esm.sh/react@^19.2.4",
-    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
-    "react/": "https://esm.sh/react@^19.2.4/"
-  }
-}
-</script>
-<link rel="stylesheet" href="/index.css">
 </head>
-  <body>
-    <div id="root"></div>
-  <script type="module" src="/index.tsx"></script>
+<body class="font-sans">
+
+    <nav class="fixed w-full z-50 px-6 py-4 flex justify-between items-center bg-parchment/80 backdrop-blur-md border-b border-slateBlue/10">
+        <span class="font-serif font-bold tracking-tighter text-xl">KEIRA MORAN</span>
+        <div class="space-x-8 text-xs uppercase tracking-widest font-semibold text-slateBlue">
+            <a href="#growth" class="hover:text-mutedSage">Growth</a>
+            <a href="#strategy" class="hover:text-mutedSage">Strategy</a>
+            <a href="#film" class="hover:text-mutedSage">Film</a>
+            <a href="#leadership" class="hover:text-mutedSage">Leadership</a>
+        </div>
+    </nav>
+
+    <section class="h-screen flex flex-col justify-center px-6 md:px-24">
+        <span class="text-mutedSage uppercase tracking-[0.3em] text-sm mb-4">Creative Producer & Strategist</span>
+        <h1 class="text-6xl md:text-8xl font-serif text-slateBlue leading-tight mb-6">
+            Building work that <span class="italic font-normal">earns</span> attention and <span class="italic font-normal">keeps</span> it.
+        </h1>
+        <div class="inline-block px-4 py-2 border border-mutedSage text-mutedSage text-xs font-bold uppercase tracking-widest">
+            2025 Cannes Lions Student Delegate
+        </div>
+    </section>
+
+    <section id="growth" class="py-24 px-6 md:px-24 bg-white/50">
+        <h2 class="text-xs uppercase tracking-[0.5em] text-mutedSage mb-12">01 / Growth & Impact</h2>
+        <div class="grid md:grid-cols-2 gap-16">
+            <div>
+                <h3 class="text-3xl font-serif mb-4">The Love Triangle PR Campaign</h3>
+                <p class="text-obsidian/70 mb-6">A narrative-led viral stunt generating 3M+ impressions and 8x subscriber growth within 72 hours.</p>
+                <div class="flex gap-8">
+                    <div><span class="block text-3xl font-serif text-slateBlue">26M+</span><span class="text-[10px] uppercase tracking-widest text-mutedSage">Total Impressions</span></div>
+                    <div><span class="block text-3xl font-serif text-slateBlue">8x</span><span class="text-[10px] uppercase tracking-widest text-mutedSage">Growth Spike</span></div>
+                </div>
+            </div>
+            <div>
+                <h3 class="text-3xl font-serif mb-4">Titan TV: Global Scaling</h3>
+                <p class="text-obsidian/70 mb-6">Expanded a student broadcast to 13M+ impressions and 20,000 followers through intentional algorithmic strategy.</p>
+                <div class="flex gap-8">
+                    <div><span class="block text-3xl font-serif text-slateBlue">13M+</span><span class="text-[10px] uppercase tracking-widest text-mutedSage">Viral Views</span></div>
+                    <div><span class="block text-3xl font-serif text-slateBlue">20K</span><span class="text-[10px] uppercase tracking-widest text-mutedSage">Followers</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="strategy" class="py-24 px-6 md:px-24 bg-slateBlue text-parchment">
+        <h2 class="text-xs uppercase tracking-[0.5em] text-mutedSage mb-12">02 / Professional Strategy</h2>
+        <div class="space-y-20">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h3 class="text-4xl font-serif mb-6">Disney Experiences</h3>
+                    <p class="text-parchment/60 leading-relaxed">Producing digital campaigns for a global workforce of 100,000+ Cast Members, Imagineers, and Employees.</p>
+                </div>
+                <div class="aspect-video bg-white/10 flex items-center justify-center text-xs tracking-widest">STAKEHOLDER MGMT // GLOBAL SCALE</div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="aspect-video bg-white/10 flex items-center justify-center text-xs tracking-widest">CINEMATIC ASSET // INVESTOR PITCH</div>
+                <div>
+                    <h3 class="text-4xl font-serif mb-6">W3 Ranch Sizzle</h3>
+                    <p class="text-parchment/60 leading-relaxed">High-stakes visual storytelling used to secure stakeholder confidence for multimillion-dollar property pitches.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="leadership" class="py-24 px-6 md:px-24">
+        <h2 class="text-xs uppercase tracking-[0.5em] text-mutedSage mb-12">03 / Cultural Leadership</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="p-8 border border-slateBlue/10 hover:border-mutedSage transition-colors">
+                <h4 class="font-serif text-2xl mb-4">Cannes Lions</h4>
+                <p class="text-sm text-obsidian/60">Selected student delegate for the International Festival of Creativity 2025.</p>
+            </div>
+            <div class="p-8 border border-slateBlue/10 hover:border-mutedSage transition-colors">
+                <h4 class="font-serif text-2xl mb-4">Titan TV Exec</h4>
+                <p class="text-sm text-obsidian/60">Spearheaded creative direction for 180+ broadcast days leading a team of 20+.</p>
+            </div>
+            <div class="p-8 border border-slateBlue/10 hover:border-mutedSage transition-colors">
+                <h4 class="font-serif text-2xl mb-4">TS Society</h4>
+                <p class="text-sm text-obsidian/60">President of a 600+ member organization at UF; doubled audience engagement.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-20 px-6 md:px-24 bg-obsidian text-parchment text-center">
+        <h2 class="text-3xl font-serif italic mb-8">Let’s build something that survives the scroll.</h2>
+        <div class="flex justify-center gap-8 text-xs tracking-widest opacity-50">
+            <a href="https://linkedin.com" class="hover:opacity-100">LINKEDIN</a>
+            <a href="mailto:email@ufl.edu" class="hover:opacity-100">EMAIL</a>
+        </div>
+    </footer>
+
 </body>
 </html>
